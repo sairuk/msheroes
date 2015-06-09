@@ -1,0 +1,114 @@
+/*
+* Monster Slayers - Hereos of Hesiod Character Sheets css
+* 
+* V:2050608
+*/
+body
+{
+    font-family: 'Bitter', serif;
+    font-size:12px;
+    text-align:center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+form
+{
+    display:inline-block;
+    margin-left: 1em;
+}
+div
+{
+    margin-bottom: 1em;
+}
+a
+{
+    color: #000;
+}
+a:hover
+{
+    color: #444;
+}
+#wrapper {}
+    #char_sheet 
+    {
+        width: 350px;
+        margin: 0 auto;
+    }
+        #c_title 
+        {
+        font-size: 2em;
+        }
+        #c_img {}                  
+        #c_typenum {}
+        #c_type {}
+        #c_num {}
+       
+        #details 
+        {
+            text-align:left;
+        }
+            #c_ac {}
+            #c_hp {}
+            #c_chk 
+            {   
+                margin-top:1em;
+                text-align: center;
+            }
+            #c_speed {}
+            #c_speed_desc {}
+            #c_ap {}
+            #c_ap_desc {}
+            #c_ranged {}
+            #c_special {}
+            #c_special_desc {}
+            #c_critical {}
+    
+        .l_title 
+        {
+            font-weight:bold;
+        }
+        .l_desc 
+        {
+            margin-top: -1em;
+        }
+        .c_hp_chk
+        {          
+            width: 2em;
+            height: 2em;
+            padding-right: 1em;
+            -webkit-appearance: radio; /* Chrome, Safari, Opera */
+            -moz-appearance: radio;    /* Firefox */
+            -ms-appearance: radio;     /* not currently supported */
+        }
+    
+    #menu {}
+        .m_title 
+        {
+            font-size: 2em;
+        }
+        .m_char_wrapper 
+        {
+            display:inline-block;
+            padding: 2em;
+        }
+        .m_char_img img 
+        {
+            height: 10em;
+            width: 10em;
+        }
+        .m_char_name 
+        {
+            font-size: 1.5em;
+        }
+        .m_char_type {}
+
+    #m_gameboard
+    {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 1em;
+        z-index: 9;
+    }    

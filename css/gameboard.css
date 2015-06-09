@@ -1,0 +1,64 @@
+body 
+{
+    font-family: 'Bitter', serif;
+    font-size: 12px;
+    margin: 1em;
+    text-align: center;
+}
+
+.draggable { 
+    display: block;
+    width: 80px; 
+    height: 80px; 
+    float: left; 
+    margin: 0; 
+    font-size: .9em; 
+    cursor: pointer;
+    z-index: 9;
+    left: 22.3em;
+}
+
+.draggable img
+{
+    width: 80px;
+    height: 80px;
+    border: 1px solid #444;
+
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+}
+
+#title
+{
+    font-size: 2em;
+}
+
+#gameboard
+{
+    margin: 0 auto;
+}
+
+.gameboard
+{
+    position: relative;
+    left: 21.1em;
+    top: 3.6em;
+    width: 800px;  
+    height: 640px; 
+}
+
+#map
+{
+    position: absolute;
+    background-size: contain; 
+}
+
+#grid 
+{
+    position: absolute;
+    background: url('../img/80x80.png') repeat;
+    z-index: 9;
+}
+#characters { display: block; }
+#monsters {}

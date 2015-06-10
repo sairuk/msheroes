@@ -20,7 +20,7 @@ if (isset($_GET['map'])) { $g_map = $_GET['map']; }
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Monster Slayers - Heroes of Hesiod Gameboard (alpha)</title>
+    <title>Monster Slayers - Heroes of Hesiod Map (alpha)</title>
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
 	<link href='css/normalize.css' rel='stylesheet' type='text/css'>
 	<link href='css/gameboard.css' rel='stylesheet' type='text/css'>

@@ -1,6 +1,10 @@
 # msheroes
 An unofficial browser based version of Monster Slayers - The Heroes of Hesiod
 
-Basic implementation of Character Sheets and a Gameboard for use with MSHeroes
+Basic implementation of Character Sheets and a Game board for use with MSHeroes
 
-Character sheets are _mobile friendly_ to save some paper.
+Includes:
+
+* Character sheets
+* Monster Sheets
+* Virtual Interactive Map

@@ -30,22 +30,26 @@ if (isset($_GET['map'])) { $g_map = $_GET['map']; }
 <body>
 <div id="title">Gameboard (alpha)</div>
 
-    <div id="#gameboard">
-        <div id="map" class="gameboard" style="background:url('map/<?=$g_map?>.png') center center no-repeat"></div> 
-        <div id="grid" class="gameboard"></div> 
+    <div id="game">
+        <div id="gameboard">
+            <div id="map" class="gameboard" style="background:url('map/<?=$g_map?>.png') center center no-repeat"></div> 
+            <div id="grid" class="gameboard"></div> 
+        </div>
+        
+        <div id="characters">
+            <div id="draggable1" class="draggable"><img src="img/evindol.png" alt="Player 1"/></div>
+            <div id="draggable2" class="draggable"><img src="img/raen.png" alt="Player 2"/></div>
+            <div id="draggable3" class="draggable"><img src="img/jorick.png" alt="Player 3"/></div>
+            <div id="draggable4" class="draggable"><img src="img/yarrow.png" alt="Player 4"/></div>
+            <div id="draggable5" class="draggable"><img src="img/bet.png" alt="Player 5"/></div>
+            <div id="draggable6" class="draggable"><img src="img/bullette.png" alt="Bullette"/></div>
+            <div id="draggable7" class="draggable"><img src="img/beholder.png" alt="Beholder"/></div>
+            <div id="draggable8" class="draggable"><img src="img/dragon.png" alt="Red Dragon"/></div>
+            <div id="draggable9" class="draggable"><img src="img/pixie.png" alt="Pixie Swarm"/></div>
+        </div>
     </div>
 
-    <div id="characters">
-        <div id="draggable1" class="draggable"><img src="img/evindol.png" alt="Player 1"/></div>
-        <div id="draggable2" class="draggable"><img src="img/raen.png" alt="Player 2"/></div>
-        <div id="draggable3" class="draggable"><img src="img/jorick.png" alt="Player 3"/></div>
-        <div id="draggable4" class="draggable"><img src="img/yarrow.png" alt="Player 4"/></div>
-        <div id="draggable5" class="draggable"><img src="img/bet.png" alt="Player 5"/></div>
-        <div id="draggable6" class="draggable"><img src="img/bullette.png" alt="Bullette"/></div>
-        <div id="draggable7" class="draggable"><img src="img/beholder.png" alt="Beholder"/></div>
-        <div id="draggable8" class="draggable"><img src="img/dragon.png" alt="Red Dragon"/></div>
-        <div id="draggable9" class="draggable"><img src="img/pixie.png" alt="Pixie Swarm"/></div>
-    </div>
+
 
 </body>
 <script>

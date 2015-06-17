@@ -8,3 +8,5 @@ Includes:
 * Character sheets
 * Monster Sheets
 * Virtual Interactive Map
+
+Original concept and artwork (c) Wizards of the Coast

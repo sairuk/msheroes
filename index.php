@@ -1,9 +1,6 @@
 <?php
 /*
-* Monster Slayers - The Hereos of Hesiod Character Sheets
-*
-* V:2050609 
-* V:2050608
+* Monster Slayers - The Heroes of Hesiod Character Sheets
 */
 
 // i need these to function!
@@ -14,16 +11,23 @@
 @require_once('lib/monsters.php');
 
 
+// analytics
+if (file_exists('lib/analytics.php')) {
+  @include('lib/analytics.php');
+}
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Monster Slayers - The Hereos of Hesiod (Unofficial)</title>
+    <title>Monster Slayers - The Heroes of Hesiod (Unofficial)</title>
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
-	<link href='css/normalize.css' rel='stylesheet' type='text/css'>
-	<link href='css/style.css' rel='stylesheet' type='text/css'>
+    <link href='css/normalize.css' rel='stylesheet' type='text/css'>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <?php @include('lib/social.php');?>
+
 </head>
 <body>
     <div id="wrapper">

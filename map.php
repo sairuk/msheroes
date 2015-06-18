@@ -1,20 +1,19 @@
 <?php
 /*
 * Monster Slayers - Heroes of Hesiod Gameboard
-*
-* V:2050610
-* V:2050609 
-* V:2050608
-*
-* References,
-* https://jqueryui.com/draggable/#snap-to
-* http://jsfiddle.net/j08691/mAzLA/1/
 */
 
+$map_dir = "map/";
+$map_img = ".png"; // only supporting png currently
 
 // setup map (optimal size 800x640)
 $g_map = "default";
-if (isset($_GET['map'])) { $g_map = $_GET['map']; }
+if (isset($_GET['map'])) { 
+    if ( file_exists($map_dir.$_GET['map'].$map_img) && (mime_content_type($map_dir.$_GET['map'].$map_img) == "image/png") ) {
+        $g_map = $_GET['map']; 
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +31,7 @@ if (isset($_GET['map'])) { $g_map = $_GET['map']; }
 <body>
     <div id="game">
         <div id="gameboard">
-            <div id="map" class="gb_item" style="background:url('map/<?=$g_map?>.png') center center no-repeat"></div> 
+            <div id="map" class="gb_item" style="background:url('<?=$map_dir.$g_map.$map_img?>') center center no-repeat"></div> 
             <div id="grid" class="gb_item"></div> 
         </div>
         

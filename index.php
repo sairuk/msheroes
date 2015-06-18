@@ -10,11 +10,6 @@
 @require_once('lib/characters.php');
 @require_once('lib/monsters.php');
 
-
-// analytics
-if (file_exists('lib/analytics.php')) {
-  @include('lib/analytics.php');
-}
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +21,14 @@ if (file_exists('lib/analytics.php')) {
     <link href='css/style.css' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <?php @include('lib/social.php');?>
+    <?php 
+        // social
+        @include('lib/social.php');
+        // analytics
+        if (file_exists('lib/analytics.php')) {
+            @include('lib/analytics.php');
+        }
+    ?>
 
 </head>
 <body>
